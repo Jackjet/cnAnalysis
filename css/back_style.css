@@ -1,0 +1,329 @@
+/*
+ *Core Style
+ *@project 语言采集
+ *@version 1.0
+ *@author c1avie (www.c1avie.com)
+ *@copyright newthread
+ */
+
+/*reset.css*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+:focus {outline: 0;}
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+table {border-collapse: collapse;border-spacing: 0;}
+
+/*public part css*/
+html,body {height: 100%;}
+body {font: 14px "微软雅黑";color: #333;}
+a {text-decoration: none;outline: none;color: #21759b;;}
+a:hover {color: #4a71a2;text-shadow: 1px 1px 1px #92c9d3;}
+.odd {background: #fff;}
+.even {background: #f9f9f9;}
+.nodisplay {display: none;}
+
+/*top part css*/
+.top {height: 28px;line-height: 28px;position: fixed;width: 100%;color: #ccc;left: 0;top: 0;z-index: 100;
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0,#373737),color-stop(18%,#464646));
+    background-image: -moz-linear-gradient(bottom,#373737 0,#464646 5px);
+    background-image: -o-linear-gradient(bottom,#373737 0,#464646 5px);
+    background: #464646;
+}
+.top .title {float: left;margin-left: 50px;}
+.top .admin {float: right;margin-right: 50px;}
+.top .admin a {margin-left: 10px;}
+
+.wrapper {margin-top: 28px;}
+/*aside part css*/
+.aside {float: left;width: 145px;min-height: 800px;background: #ececec;}
+.aside h1 {height: 30px;line-height: 30px;
+	background: #767676;
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0,#7e7e7e),color-stop(18%,#707070));
+    background-image: -moz-linear-gradient(bottom,#7e7e7e 0,#707070 5px);
+    background-image: -o-linear-gradient(bottom,#7e7e7e 0,#707070 5px);
+}
+.aside h1 a {background:url(../images/home.png)) no-repeat 0 center;padding-left: 30px;margin-left: 10px;}
+.aside h1 a {text-shadow: 0 -1px 0 #333;color: #fff;border-top-color: gray;border-bottom-color: #6d6d6d;}
+.aside dl dd {background: #fff;}
+.aside dl dt {height: 30px;line-height: 30px;border-bottom: 1px solid #ccc;}
+.aside dl dt a {padding-left: 30px;margin-left: 10px;font-weight: bold;cursor: default;}
+.aside dl dt.resource a {background: url(../images/resource.png) no-repeat 0 center;}
+.aside dl dt.user a {background: url(../images/user.png) no-repeat 0 center;}
+.aside dl dt.publish a {background: url(../images/publish.png) no-repeat 0 center;}
+.aside dl dt.authority a {background: url(../images/authority.png) no-repeat 0 center;}
+.aside dl dt.crawler a {background: url(../images/crawler.png) no-repeat 0 center;}
+.aside dl ul {margin-left: 20px;}
+.aside dl ul li {line-height: 25px;}
+
+/*content part css*/
+.content {width: 100%;min-height: 600px;}
+.main {margin-left: 165px;min-height: 600px;padding-bottom: 50px;}
+.layout {padding-top: 1px;}
+.layout h2 {font-size: 23px;margin-top: 20px;margin-bottom: 20px;}
+
+/*layout1 part css*/
+#layout1 h2 i,#layout2 h2 i {background: url(../images/icon.png) no-repeat -555px -5px;width: 35px;height: 35px;display: inline-block;}
+#layout3 h2 i,#layout4 h2 i,#layout5 h2 i {background: url(../images/icon.png) no-repeat -600px -5px;width: 35px;height: 35px;display: inline-block;}
+#layout6 h2 i,#layout7 h2 i {background: url(../images/icon.png) no-repeat -310px -5px;width: 35px;height: 35px;display: inline-block;}
+.layout h2 span {display: inline-block;vertical-align: top;margin-left: 5px;}
+.layout table {border-collapse: separate;border-spacing: 2px;border: 1px solid #dfdfdf;width: 100%;}
+.layout table thead {background: #f2f2f2;border: 1px solid #dfdfdf;
+	background: -webkit-gradient(linear,top,bottom,color-stop(0,#f9f9f9),color-stop(18%,#eeeeee));
+    background: -moz-linear-gradient(bottom,#f9f9f9 0,#eeeeee 5px);
+    background: -o-linear-gradient(bottom,#f9f9f9 0,#eeeeee 5px);
+}
+.layout table tr {border-bottom: 1px solid #dfdfdf;}
+.layout table th {text-align: left;line-height: 35px;border-bottom: 1px solid #dfdfdf;padding-left: 5px;}
+.layout table td {line-height: 35px;padding-left: 5px;border-bottom: 1px solid #dfdfdf;}
+.layout table tbody tr:last-child td {border-bottom: none;}
+
+.form-group {margin-bottom: 20px;position: relative;}
+.form-group label {display: inline-block;zoom: 1;vertical-align: middle;text-align: right;min-width: 150px;font-size: 18px;}
+.form-group label span {color: #ff3300;}
+.form-group input[type="text"] {width: 260px;height: 30px;border-radius: 5px;border: 1px solid #999;background: #fcf6f6;padding-left: 5px;}
+.form-group input[type="password"] {width: 260px;height: 30px;border-radius: 5px;border: 1px solid #999;background: #fcf6f6;padding-left: 5px;}
+.form-group input[type="button"] {width: 260px;height: 32px;margin-left: 155px;margin-top: 25px;color: #fff;border: 0;text-shadow: 1px 1px 0 rgba(0,0,0,0.2);border-radius: 5px;font-weight: bold;cursor: pointer;background-size: cover;background-color: #f5aa2b;background: -webkit-gradient(linear,left top,left bottom,from(#ffa600),to(#fe9200));}
+.form-group input[type="submit"] {width: 260px;height: 32px;margin-left: 155px;margin-top: 25px;color: #fff;border: 0;text-shadow: 1px 1px 0 rgba(0,0,0,0.2);border-radius: 5px;font-weight: bold;cursor: pointer;background-size: cover;background-color: #f5aa2b;background: -webkit-gradient(linear,left top,left bottom,from(#ffa600),to(#fe9200));}
+.form-group-error {position: absolute;left: 440px;top: 5px;color: #f00;height: 20px;width: 200px;}
+.form-group-con {color: #333;}
+.paging {float: right;margin: 40px 120px 0 0;}
+.paging a {margin-left: 5px;}
+.article a {}
+.new-mission {margin-top: 20px;}
+.new-mission h3 {font-size: 20px;margin-bottom: 10px;}
+
+#layout7 .article-title {margin-bottom: 20px;}
+#layout7 .article-title label {font-size: 16px;line-height: 30px;}
+#layout7 .article-title input {width: 500px;background: #fff;}
+#layout7 .article-title select {height: 25px;width: 200px;}
+.button-primary {
+    height: 30px;
+    line-height: 28px;
+    margin-right: 20px;
+    padding: 0 12px 2px;
+    background-color: #21759b;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#2a95c5),to(#21759b));
+    background-image: -webkit-linear-gradient(top,#2a95c5,#21759b);
+    background-image: -moz-linear-gradient(top,#2a95c5,#21759b);
+    background-image: -ms-linear-gradient(top,#2a95c5,#21759b);
+    background-image: -o-linear-gradient(top,#2a95c5,#21759b);
+    background-image: linear-gradient(to bottom,#2a95c5,#21759b);
+    border-color: #21759b;
+    border-bottom-color: #1e6a8d;
+    -webkit-box-shadow: inset 0 1px 0 rgba(120,200,230,.5);
+    box-shadow: inset 0 1px 0 rgba(120,200,230,.5);
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0,0,0,.1);
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-border-radius: 3px;
+    -webkit-appearance: none;
+    border-radius: 3px;
+}
+.publish-button {width: 700px;height: 30px;margin-top: 20px;}
+.publish-button input {float: right;}
+.assign-submit {margin-left: 10px;}
+.textarea-editor {width: 800px;height: 400px;}
+
+/*树形结构部分样式*/
+#TreeList {
+  background-color: #FFFFFF;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+  padding-left: 6px;
+  width: 680px;
+  float: left;
+}
+/*#TreeList .mouseOver {
+  background-color: #FAF3E2;
+}*/
+
+#TreeList .ParentNode {
+  line-height: 21px;
+  height: 21px;
+  margin-top: 2px;
+  clear: both;
+}
+
+#TreeList .ChildNode {
+  background-image: url(../images/Sys_ModuleIcos.png);
+  background-position: 15px -58px;
+  padding-left: 39px;
+  line-height: 21px;
+  background-repeat: no-repeat;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-top-style: dashed;
+  border-right-style: dashed;
+  border-bottom-style: dashed;
+  border-left-style: dashed;
+  border-top-color: #aabdce;
+  border-right-color: #aabdce;
+  border-bottom-color: #aabdce;
+  border-left-color: #aabdce;
+  cursor: default;
+  clear: both;
+  height: 21px;
+  color: #314f6a;
+}
+
+#TreeList .title {
+  float: left;
+}
+#TreeList .input {
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFF;
+  height: 16px;
+  background-color: #3F6B8F;
+  width: 120px;
+  text-align: center;
+  margin-top: 1px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: #1F3547;
+  border-right-color: #FFF;
+  border-bottom-color: #FFF;
+  border-left-color: #1F3547;
+  float: left;
+}
+#TreeList .editBT {
+  float: left;
+  overflow: visible;
+}
+#TreeList .editBT .ok {
+  background-image: url(../images/Sys_ModuleIcos.png);
+  background-repeat: no-repeat;
+  background-position: 0px -89px;
+  height: 13px;
+  width: 12px;
+  float: left;
+  margin-left: 3px;
+  padding: 0px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+#TreeList .editBT .cannel {
+  background-image: url(../images/Sys_ModuleIcos.png);
+  background-repeat: no-repeat;
+  background-position: 0px -120px;
+  float: left;
+  height: 13px;
+  width: 12px;
+  margin-left: 3px;
+  padding: 0px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+#TreeList .editArea {
+  float: right;
+  color: #C3C3C3;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+#TreeList .editArea span {
+  margin: 2px;
+}
+
+#TreeList .editArea .mouseOver {
+  color: #BD4B00;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: #C9925A;
+  border-right-color: #E6CFBB;
+  border-bottom-color: #E6CFBB;
+  border-left-color: #C9925A;
+  background-color: #FFFFFF;
+  margin: 0px;
+  padding: 1px;
+}
+
+#TreeList .ParentNode .title {
+  color: #314f6a;
+  cursor: pointer;
+  background-image: url(../images/Sys_ModuleIcos.png);
+  background-repeat: no-repeat;
+  padding-left: 39px;
+}
+
+#TreeList .ParentNode.show .title {
+  font-weight: bold;
+  background-position: 3px -27px;
+}
+
+#TreeList .ParentNode.hidden .title {
+  background-position: 3px 4px;
+}
+
+#TreeList .ParentNode .editArea {
+  color: #999;  
+}
+#TreeList .ParentNode.show {
+  background-color: #d1dfeb;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: #5d7b96;
+  border-right-color: #5d7b96;
+  border-bottom-color: #5d7b96;
+  border-left-color: #5d7b96;
+}
+
+#TreeList .ParentNode.hidden {
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-top-style: dashed;
+  border-right-style: dashed;
+  border-bottom-style: dashed;
+  border-left-style: dashed;
+  border-top-color: #aabdce;
+  border-right-color: #aabdce;
+  border-bottom-color: #aabdce;
+  border-left-color: #aabdce;
+}
+
+#TreeList .Row {
+  clear: both;
+  margin-left: 24px;
+  background-image: url(../images/Sys_ModuleIcos2.png);
+  background-repeat: repeat-y;
+  background-position: 7px 0px;
+}
